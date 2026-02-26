@@ -4,21 +4,26 @@ import { PrivacyPage } from "./pages/PrivacyPage";
 import { TermsPage } from "./pages/TermsPage";
 import { UserDeletionPage } from "./pages/UserDeletionPage";
 
-export const router = createBrowserRouter([
+export const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      Component: HomePage,
+    },
+    {
+      path: "/privacy",
+      Component: PrivacyPage,
+    },
+    {
+      path: "/terms-and-conditions",
+      Component: TermsPage,
+    },
+    {
+      path: "/user-deletion",
+      Component: UserDeletionPage,
+    },
+  ],
   {
-    path: "/",
-    Component: HomePage,
+    basename: import.meta.env.BASE_URL,
   },
-  {
-    path: "/privacy",
-    Component: PrivacyPage,
-  },
-  {
-    path: "/terms-and-conditions",
-    Component: TermsPage,
-  },
-  {
-    path: "/user-deletion",
-    Component: UserDeletionPage,
-  },
-]);
+);
