@@ -48,6 +48,7 @@ export function Footer() {
               <li><Link to="/privacy" className="transition-colors hover:opacity-80" style={{ color: 'var(--text-secondary)' }}>Privacy Policy</Link></li>
               <li><Link to="/terms-and-conditions" className="transition-colors hover:opacity-80" style={{ color: 'var(--text-secondary)' }}>Terms & Conditions</Link></li>
               <li><Link to="/user-deletion" className="transition-colors hover:opacity-80" style={{ color: 'var(--text-secondary)' }}>Account Deletion</Link></li>
+              <li><Link to="/support" className="transition-colors hover:opacity-80" style={{ color: 'var(--text-secondary)' }}>Support</Link></li>
             </ul>
           </div>
         </div>

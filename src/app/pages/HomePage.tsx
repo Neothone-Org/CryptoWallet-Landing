@@ -68,7 +68,7 @@ export function HomePage() {
             <div className="relative">
               <div className="absolute inset-0 rounded-3xl blur-3xl opacity-20" style={{ backgroundColor: 'var(--primary)' }}></div>
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1614787913638-65ff1dacc76e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcnlwdG9jdXJyZW5jeSUyMGJpdGNvaW4lMjBwaG9uZSUyMGFwcHxlbnwxfHx8fDE3NzIwMTA1OTR8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                src="/screenshots/ss1.png"
                 alt="CoinVoidly App Interface"
                 className="relative rounded-3xl shadow-2xl w-full"
                 loading="eager"
@@ -189,7 +189,7 @@ export function HomePage() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="rounded-2xl overflow-hidden" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)', border: '1px solid' }}>
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1557680784-6db47c6f56ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBwaG9uZSUyMHNjcmVlbiUyMG1vY2t1cCUyMGRhcmt8ZW58MXx8fHwxNzcyMDEwNTk1fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                src="/screenshots/portfolio.png"
                 alt="Portfolio Overview"
                 className="w-full aspect-[9/16] object-cover"
                 loading="lazy"
@@ -202,7 +202,7 @@ export function HomePage() {
 
             <div className="rounded-2xl overflow-hidden" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)', border: '1px solid' }}>
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1768055105681-7d2096c5165f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBjaGFydCUyMHBvcnRmb2xpbyUyMGFuYWx5dGljc3xlbnwxfHx8fDE3NzIwMTA1OTV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                src="/screenshots/market.png"
                 alt="Market Analysis"
                 className="w-full aspect-[9/16] object-cover"
                 loading="lazy"
@@ -215,7 +215,7 @@ export function HomePage() {
 
             <div className="rounded-2xl overflow-hidden" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)', border: '1px solid' }}>
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1608858132869-4fe7467333b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcnlwdG8lMjB0cmFkaW5nJTIwd29ya3NwYWNlJTIwZGFya3xlbnwxfHx8fDE3NzIwMTA1OTV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                src="/screenshots/ai_report.png"
                 alt="AI Insights"
                 className="w-full aspect-[9/16] object-cover"
                 loading="lazy"

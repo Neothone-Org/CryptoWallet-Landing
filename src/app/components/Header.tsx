@@ -30,6 +30,9 @@ export function Header() {
             <a href="#faq" className="transition-colors hover:opacity-80" style={{ color: 'var(--text-secondary)' }}>
               FAQ
             </a>
+            <Link to="/support" className="transition-colors hover:opacity-80" style={{ color: 'var(--text-secondary)' }}>
+              Support
+            </Link>
             <button className="flex items-center gap-2 px-6 py-2.5 rounded-xl transition-all hover:opacity-90" style={{ backgroundColor: 'var(--primary)', color: '#ffffff' }}>
               <Apple className="h-4 w-4" />
               Download for iOS
@@ -73,6 +76,14 @@ export function Header() {
             >
               FAQ
             </a>
+            <Link
+              to="/support"
+              className="block py-2 transition-colors"
+              style={{ color: 'var(--text-secondary)' }}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Support
+            </Link>
             <button className="w-full flex items-center justify-center gap-2 px-6 py-2.5 rounded-xl" style={{ backgroundColor: 'var(--primary)', color: '#ffffff' }}>
               <Apple className="h-4 w-4" />
               Download for iOS
