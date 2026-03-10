@@ -39,8 +39,6 @@ export function PrivacyPage() {
                 <li>Account information (email address, password)</li>
                 <li>Profile information (name, preferences, language settings)</li>
                 <li>Portfolio data (wallet addresses, transactions, holdings)</li>
-                <li>Usage data (features used, interaction patterns)</li>
-                <li>Device information (device type, operating system, app version)</li>
                 <li>Communication data (support tickets, feedback)</li>
               </ul>
             </section>
@@ -78,7 +76,7 @@ export function PrivacyPage() {
                 <li>CoinGecko for market data</li>
                 <li>NewsData API for crypto news</li>
                 <li>Apple and Google for social authentication</li>
-                <li>Payment processors for subscription billing</li>
+                <li>RevenueCat for subscription billing, which uses Apple's in-app purchase system</li>
               </ul>
               <p className="mt-4" style={{ color: 'var(--text-secondary)' }}>
                 These services have their own privacy policies and we encourage you to review them.
@@ -110,7 +108,7 @@ export function PrivacyPage() {
             <section className="p-6 rounded-2xl" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)', border: '1px solid' }}>
               <h2 className="text-2xl mb-4" style={{ color: 'var(--text-primary)' }}>8. Children's Privacy</h2>
               <p style={{ color: 'var(--text-secondary)' }}>
-                CoinVoidly is not intended for users under the age of 18. We do not knowingly collect information from children under 18. If you believe we have collected information from a child, please contact us immediately.
+                CoinVoidly is not directed to children under 13, and we do not knowingly collect personal information from children under 13. If we learn that a child under 13 has provided personal information through the App, we will delete that information. If you are a parent or guardian and believe your child has provided personal information to us, please contact us so we can take appropriate action.
               </p>
             </section>
 

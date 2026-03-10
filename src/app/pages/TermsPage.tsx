@@ -53,7 +53,6 @@ export function TermsPage() {
                 To use CoinVoidly, you must:
               </p>
               <ul className="list-disc list-inside space-y-2" style={{ color: 'var(--text-secondary)' }}>
-                <li>Be at least 18 years of age</li>
                 <li>Provide accurate and complete registration information</li>
                 <li>Maintain the security of your account credentials</li>
                 <li>Notify us immediately of any unauthorized access</li>
@@ -95,11 +94,10 @@ export function TermsPage() {
               </p>
               <ul className="list-disc list-inside space-y-2" style={{ color: 'var(--text-secondary)' }}>
                 <li>Subscriptions are billed monthly ($9.99) or yearly ($99.99)</li>
-                <li>Payment is processed through Apple App Store</li>
+                <li>Payment is processed through RevenueCat using Apple's App Store billing system</li>
                 <li>Subscriptions automatically renew unless cancelled</li>
                 <li>Cancel anytime through your App Store account settings</li>
                 <li>No refunds for partial billing periods</li>
-                <li>Free trial (if offered) converts to paid subscription unless cancelled</li>
               </ul>
             </section>
 
