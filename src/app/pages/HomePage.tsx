@@ -87,7 +87,7 @@ export function HomePage() {
               { value: "10,000+", label: "Cryptocurrencies Tracked" },
               { value: "24/7", label: "Real-time Market Data" },
               { value: "50+", label: "Supported Exchanges" },
-              { value: "15+", label: "Languages Supported" }
+              { value: "10", label: "Languages Supported" }
             ].map((stat, index) => (
               <div key={index} className="p-6 rounded-2xl text-center" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)', border: '1px solid' }}>
                 <div className="text-3xl md:text-4xl mb-2" style={{ color: 'var(--primary)' }}>{stat.value}</div>
@@ -332,11 +332,11 @@ export function HomePage() {
               </div>
               <ul className="space-y-4 mb-8">
                 {[
-                  "Up to 3 wallets",
+                  "Up to 2 wallets",
                   "Basic portfolio tracking",
                   "Real-time market data",
-                  "3 watchlists",
-                  "5 price alerts",
+                  "1 watchlist",
+                  "4 active alerts",
                   "News feed access",
                   "Multi-currency support"
                 ].map((feature, index) => (
@@ -417,7 +417,7 @@ export function HomePage() {
               },
               {
                 question: "What currencies are supported?",
-                answer: "CoinVoidly supports over 50 fiat currencies with real-time FX conversion. You can view your portfolio value in your preferred currency, and we support 15+ interface languages."
+                answer: "CoinVoidly supports 20+ currencies in the app with real-time FX conversion. The interface is available in English (en), Japanese (ja), German (de), French (fr), Korean (ko), Spanish (es), Italian (it), Traditional Chinese (zh-hant), Portuguese (pt), and Arabic (ar)."
               },
               {
                 question: "How does the AI analysis work?",
