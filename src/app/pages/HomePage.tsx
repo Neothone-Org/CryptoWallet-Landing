@@ -23,6 +23,8 @@ import {
 } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 
+const APP_STORE_URL = "https://apps.apple.com/ro/app/crypto-tracker-coin-voidly/id6757703005";
+
 export function HomePage() {
   return (
     <div className="min-h-screen" style={{ backgroundColor: 'var(--background)', color: 'var(--text-primary)' }}>
@@ -45,10 +47,16 @@ export function HomePage() {
                 CoinVoidly helps you monitor all your crypto holdings, analyze performance with AI-powered insights, and stay ahead of the market. All in one beautiful iOS app.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <button className="flex items-center justify-center gap-2 px-8 py-4 rounded-xl transition-all hover:opacity-90" style={{ backgroundColor: 'var(--primary)', color: '#ffffff' }}>
+                <a
+                  href={APP_STORE_URL}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center justify-center gap-2 px-8 py-4 rounded-xl transition-all hover:opacity-90"
+                  style={{ backgroundColor: 'var(--primary)', color: '#ffffff' }}
+                >
                   <Apple className="h-5 w-5" />
                   Download for iOS
-                </button>
+                </a>
                 <button className="flex items-center justify-center gap-2 px-8 py-4 rounded-xl transition-all hover:opacity-90" style={{ backgroundColor: 'var(--surface)', color: 'var(--text-primary)', border: '1px solid var(--border)' }}>
                   <Globe className="h-5 w-5" />
                   Web App Coming Soon
@@ -318,13 +326,13 @@ export function HomePage() {
               Choose Your Plan
             </h2>
             <p className="text-lg max-w-2xl mx-auto" style={{ color: 'var(--text-secondary)' }}>
-              Start for free or unlock advanced features with our premium subscription.
+              Start for free or unlock advanced features with our PRO subscription.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Free Plan */}
-            <div className="p-8 rounded-3xl" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)', border: '1px solid' }}>
+            <div className="p-8 rounded-3xl flex flex-col h-full" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)', border: '1px solid' }}>
               <h3 className="text-2xl mb-2" style={{ color: 'var(--text-primary)' }}>Free</h3>
               <div className="mb-6">
                 <span className="text-4xl" style={{ color: 'var(--text-primary)' }}>$0</span>
@@ -334,10 +342,13 @@ export function HomePage() {
                 {[
                   "Up to 2 wallets",
                   "Basic portfolio tracking",
+                  "Basic charts & tools",
+                  "Basic portfolio analytics",
                   "Real-time market data",
                   "1 watchlist",
                   "4 active alerts",
                   "News feed access",
+                  "Weekly email reports",
                   "Multi-currency support"
                 ].map((feature, index) => (
                   <li key={index} className="flex items-start gap-3">
@@ -346,30 +357,34 @@ export function HomePage() {
                   </li>
                 ))}
               </ul>
-              <button className="w-full py-3 rounded-xl transition-all" style={{ backgroundColor: 'var(--fill-muted-primary)', color: 'var(--primary)' }}>
+              <a
+                href={APP_STORE_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="w-full py-3 rounded-xl transition-all mt-auto text-center"
+                style={{ backgroundColor: 'var(--fill-muted-primary)', color: 'var(--primary)' }}
+              >
                 Get Started Free
-              </button>
+              </a>
             </div>
 
-            {/* Premium Plan */}
-            <div className="p-8 rounded-3xl relative" style={{ backgroundColor: 'var(--primary)', color: '#ffffff' }}>
+            {/* PRO Plan */}
+            <div className="p-8 rounded-3xl relative flex flex-col h-full" style={{ backgroundColor: 'var(--primary)', color: '#ffffff' }}>
               <div className="absolute -top-4 right-8 px-4 py-1 rounded-full text-sm" style={{ backgroundColor: 'var(--success)' }}>
                 Most Popular
               </div>
-              <h3 className="text-2xl mb-2">Premium</h3>
+              <h3 className="text-2xl mb-2">PRO</h3>
               <div className="mb-6">
-                <span className="text-4xl">$9.99</span>
+                <span className="text-4xl">$5.99</span>
                 <span className="opacity-80">/month</span>
               </div>
-              <p className="mb-6 opacity-90">Or $99.99/year (save 17%)</p>
+              <p className="mb-6 opacity-90">Or $39.99/year</p>
               <ul className="space-y-4 mb-8">
                 {[
                   "Unlimited wallets",
-                  "Advanced portfolio analytics",
                   "AI-powered insights & reports",
                   "Unlimited watchlists",
                   "Unlimited alerts",
-                  "Weekly email reports",
                   "Priority support",
                   "Portfolio health score",
                   "Advanced charts & tools"
@@ -380,9 +395,15 @@ export function HomePage() {
                   </li>
                 ))}
               </ul>
-              <button className="w-full py-3 rounded-xl transition-all hover:opacity-90" style={{ backgroundColor: '#ffffff', color: 'var(--primary)' }}>
-                Start Premium Trial
-              </button>
+              <a
+                href={APP_STORE_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="w-full py-3 rounded-xl transition-all hover:opacity-90 mt-auto text-center"
+                style={{ backgroundColor: '#ffffff', color: 'var(--primary)' }}
+              >
+                Start PRO
+              </a>
             </div>
           </div>
         </div>
@@ -421,7 +442,7 @@ export function HomePage() {
               },
               {
                 question: "How does the AI analysis work?",
-                answer: "Our AI analyzes your portfolio composition, performance trends, risk factors, and market conditions to generate personalized insights and recommendations. This feature is available with the Premium subscription."
+                answer: "Our AI analyzes your portfolio composition, performance trends, risk factors, and market conditions to generate personalized insights and recommendations. This feature is available with the PRO subscription."
               }
             ].map((faq, index) => (
               <div key={index} className="p-6 rounded-2xl" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)', border: '1px solid' }}>
@@ -451,10 +472,16 @@ export function HomePage() {
               <p className="text-lg mb-8 text-white opacity-90 max-w-2xl mx-auto">
                 Join thousands of crypto investors tracking their portfolios with CoinVoidly. Download now and start managing your investments like a pro.
               </p>
-              <button className="px-8 py-4 rounded-xl transition-all hover:opacity-90 inline-flex items-center gap-2" style={{ backgroundColor: '#ffffff', color: 'var(--primary)' }}>
+              <a
+                href={APP_STORE_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="px-8 py-4 rounded-xl transition-all hover:opacity-90 inline-flex items-center gap-2"
+                style={{ backgroundColor: '#ffffff', color: 'var(--primary)' }}
+              >
                 <Apple className="h-5 w-5" />
                 Download for iOS
-              </button>
+              </a>
             </div>
           </div>
         </div>

@@ -2,6 +2,8 @@ import { Link } from "react-router";
 import { Apple, Menu, X } from "lucide-react";
 import { useState } from "react";
 
+const APP_STORE_URL = "https://apps.apple.com/ro/app/crypto-tracker-coin-voidly/id6757703005";
+
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -33,10 +35,16 @@ export function Header() {
             <Link to="/support" className="transition-colors hover:opacity-80" style={{ color: 'var(--text-secondary)' }}>
               Support
             </Link>
-            <button className="flex items-center gap-2 px-6 py-2.5 rounded-xl transition-all hover:opacity-90" style={{ backgroundColor: 'var(--primary)', color: '#ffffff' }}>
+            <a
+              href={APP_STORE_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2 px-6 py-2.5 rounded-xl transition-all hover:opacity-90"
+              style={{ backgroundColor: 'var(--primary)', color: '#ffffff' }}
+            >
               <Apple className="h-4 w-4" />
               Download for iOS
-            </button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -84,10 +92,16 @@ export function Header() {
             >
               Support
             </Link>
-            <button className="w-full flex items-center justify-center gap-2 px-6 py-2.5 rounded-xl" style={{ backgroundColor: 'var(--primary)', color: '#ffffff' }}>
+            <a
+              href={APP_STORE_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="w-full flex items-center justify-center gap-2 px-6 py-2.5 rounded-xl"
+              style={{ backgroundColor: 'var(--primary)', color: '#ffffff' }}
+            >
               <Apple className="h-4 w-4" />
               Download for iOS
-            </button>
+            </a>
           </div>
         )}
       </nav>

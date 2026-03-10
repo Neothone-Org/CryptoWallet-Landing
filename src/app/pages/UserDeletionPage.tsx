@@ -77,7 +77,7 @@ export function UserDeletionPage() {
                 <div>
                   <h4 className="mb-2" style={{ color: 'var(--text-primary)' }}>2. Cancel Active Subscriptions</h4>
                   <p>
-                    If you have an active Premium subscription, cancel it through your App Store account settings before deleting your account. Deleting your account does not automatically cancel subscriptions.
+                    If you have an active PRO subscription, cancel it through your App Store account settings before deleting your account. Deleting your account does not automatically cancel subscriptions.
                   </p>
                 </div>
                 <div>
@@ -137,7 +137,7 @@ export function UserDeletionPage() {
                 Consider these alternatives:
               </p>
               <ul className="space-y-2 list-disc list-inside" style={{ color: 'var(--text-secondary)' }}>
-                <li><strong>Downgrade to Free:</strong> Cancel your Premium subscription and continue using the free tier</li>
+                <li><strong>Downgrade to Free:</strong> Cancel your PRO subscription and continue using the free tier</li>
                 <li><strong>Temporarily Deactivate:</strong> Take a break without losing your data (contact support)</li>
                 <li><strong>Clear Portfolio Data:</strong> Delete individual wallets and transactions while keeping your account</li>
               </ul>

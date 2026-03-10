@@ -40,7 +40,7 @@ export function TermsPage() {
                 <li>Real-time market data from third-party providers</li>
                 <li>Price alerts and notifications</li>
                 <li>Crypto news aggregation</li>
-                <li>AI-powered portfolio insights (Premium)</li>
+                <li>AI-powered portfolio insights (PRO)</li>
               </ul>
               <p className="mt-4 font-semibold" style={{ color: 'var(--danger)' }}>
                 Important: CoinVoidly is NOT a trading platform, exchange, or custodial wallet. We do not hold, trade, or have access to your cryptocurrency assets.
@@ -90,7 +90,7 @@ export function TermsPage() {
             <section className="p-6 rounded-2xl" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)', border: '1px solid' }}>
               <h2 className="text-2xl mb-4" style={{ color: 'var(--text-primary)' }}>6. Subscription and Billing</h2>
               <p className="mb-4" style={{ color: 'var(--text-secondary)' }}>
-                Premium subscription terms:
+                PRO subscription terms:
               </p>
               <ul className="list-disc list-inside space-y-2" style={{ color: 'var(--text-secondary)' }}>
                 <li>Subscriptions are billed monthly ($9.99) or yearly ($99.99)</li>
