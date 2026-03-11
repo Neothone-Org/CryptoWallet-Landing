@@ -1,5 +1,8 @@
 import { Link } from "react-router";
-import { Mail } from "lucide-react";
+import { Facebook, Instagram, Mail } from "lucide-react";
+
+const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61582746754405";
+const INSTAGRAM_URL = "https://www.instagram.com/coinvoidly/";
 
 export function Footer() {
   return (
@@ -17,7 +20,7 @@ export function Footer() {
               <span className="text-xl" style={{ color: 'var(--text-primary)' }}>CoinVoidly</span>
             </div>
             <p className="mb-4 max-w-md" style={{ color: 'var(--text-secondary)' }}>
-              Track your crypto portfolio with powerful analytics, real-time market data, and AI-powered insights. Available now on iOS.
+              Track your crypto portfolio with powerful analytics, real-time market data, AI-powered insights, and secure login with email and password, Apple, or Google. Available now on iOS.
             </p>
             <div className="flex gap-4">
               <a
@@ -28,7 +31,30 @@ export function Footer() {
               >
                 <Mail className="h-5 w-5" />
               </a>
+              <a
+                href={FACEBOOK_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="p-2 rounded-lg transition-colors"
+                style={{ backgroundColor: 'var(--surface)', color: 'var(--text-secondary)' }}
+                aria-label="CoinVoidly on Facebook"
+              >
+                <Facebook className="h-5 w-5" />
+              </a>
+              <a
+                href={INSTAGRAM_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="p-2 rounded-lg transition-colors"
+                style={{ backgroundColor: 'var(--surface)', color: 'var(--text-secondary)' }}
+                aria-label="CoinVoidly on Instagram"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
             </div>
+            <p className="mt-4 text-sm" style={{ color: 'var(--text-secondary)' }}>
+              Follow CoinVoidly on Facebook and Instagram for product updates and crypto app news.
+            </p>
           </div>
 
           {/* Product */}

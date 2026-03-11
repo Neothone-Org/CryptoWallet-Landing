@@ -1,7 +1,7 @@
 {
   "name": "CoinVoidly",
   "short_name": "CoinVoidly",
-  "description": "Crypto portfolio tracker with real-time market data, AI-powered insights, and analytics.",
+  "description": "Crypto portfolio tracker for iPhone with real-time prices, AI insights, alerts, watchlists, and secure login options.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

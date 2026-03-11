@@ -37,14 +37,14 @@ export function HomePage() {
             <div>
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6" style={{ backgroundColor: 'var(--fill-muted-primary)', color: 'var(--secondary)' }}>
                 <Sparkles className="h-4 w-4" />
-                <span className="text-sm">Now Available on iOS</span>
+                <span className="text-sm">Now Available on iOS with secure sign-in</span>
               </div>
               <h1 className="text-5xl md:text-6xl mb-6 leading-tight" style={{ color: 'var(--text-primary)' }}>
                 Track Your Crypto Portfolio With{' '}
                 <span style={{ color: 'var(--primary)' }}>Intelligence</span>
               </h1>
               <p className="text-lg md:text-xl mb-8 max-w-xl" style={{ color: 'var(--text-secondary)' }}>
-                CoinVoidly helps you monitor all your crypto holdings, analyze performance with AI-powered insights, and stay ahead of the market. All in one beautiful iOS app.
+                CoinVoidly is a crypto portfolio tracker for iPhone that helps you monitor Bitcoin, Ethereum, and altcoins, analyze performance with AI-powered insights, and stay ahead with real-time market data, alerts, and watchlists.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <a
@@ -61,6 +61,21 @@ export function HomePage() {
                   <Globe className="h-5 w-5" />
                   Web App Coming Soon
                 </button>
+              </div>
+              <div className="flex flex-wrap gap-3 mb-8">
+                {[
+                  "Login with email and password",
+                  "Sign in with Apple",
+                  "Sign in with Google"
+                ].map((item) => (
+                  <div
+                    key={item}
+                    className="px-4 py-2 rounded-full text-sm"
+                    style={{ backgroundColor: 'var(--surface)', color: 'var(--text-secondary)', border: '1px solid var(--border)' }}
+                  >
+                    {item}
+                  </div>
+                ))}
               </div>
               <div className="flex items-center gap-8 text-sm" style={{ color: 'var(--text-secondary)' }}>
                 <div className="flex items-center gap-2">
@@ -100,6 +115,46 @@ export function HomePage() {
               <div key={index} className="p-6 rounded-2xl text-center" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)', border: '1px solid' }}>
                 <div className="text-3xl md:text-4xl mb-2" style={{ color: 'var(--primary)' }}>{stat.value}</div>
                 <div className="text-sm" style={{ color: 'var(--text-secondary)' }}>{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SEO Value Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl mb-4" style={{ color: 'var(--text-primary)' }}>
+              The Crypto Portfolio Tracker Built for Everyday Investors
+            </h2>
+            <p className="text-lg max-w-3xl mx-auto" style={{ color: 'var(--text-secondary)' }}>
+              Whether you are tracking long-term Bitcoin positions, managing altcoin trades, or building a diversified crypto watchlist, CoinVoidly gives you one place to follow prices, performance, and portfolio health.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                title: "Track Bitcoin, Ethereum, and Altcoins",
+                description: "Follow your full crypto portfolio with real-time price updates, allocation tracking, profit and loss visibility, and clean wallet organization."
+              },
+              {
+                title: "Choose the Login Method You Prefer",
+                description: "Create your account with email and password or use Apple Sign In and Google Sign In for faster, secure access across your devices."
+              },
+              {
+                title: "Stay Ahead With Alerts and AI Insights",
+                description: "Use smart alerts, market monitoring, and AI-powered portfolio analysis to spot changes faster and make better informed decisions."
+              }
+            ].map((item) => (
+              <div
+                key={item.title}
+                className="p-8 rounded-3xl h-full"
+                style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)', border: '1px solid' }}
+              >
+                <h3 className="text-2xl mb-4" style={{ color: 'var(--text-primary)' }}>{item.title}</h3>
+                <p style={{ color: 'var(--text-secondary)' }}>{item.description}</p>
               </div>
             ))}
           </div>
@@ -433,6 +488,10 @@ export function HomePage() {
                 answer: "We integrate with CoinGecko to provide real-time market data for over 10,000 cryptocurrencies, including prices, market cap, volume, and historical data."
               },
               {
+                question: "How can I sign in to CoinVoidly?",
+                answer: "You can log in with your email and password, or choose a faster social sign-in option with Apple Sign In or Google Sign In."
+              },
+              {
                 question: "Can I import my transactions automatically?",
                 answer: "Currently, you need to manually add transactions to your wallets. We're working on API integrations with major exchanges to enable automatic transaction imports in a future update."
               },
@@ -470,7 +529,7 @@ export function HomePage() {
                 Ready to Take Control of Your Crypto?
               </h2>
               <p className="text-lg mb-8 text-white opacity-90 max-w-2xl mx-auto">
-                Join thousands of crypto investors tracking their portfolios with CoinVoidly. Download now and start managing your investments like a pro.
+                Join crypto investors using CoinVoidly to track portfolios, monitor the market, and log in securely with email and password, Apple Sign In, or Google Sign In.
               </p>
               <a
                 href={APP_STORE_URL}
