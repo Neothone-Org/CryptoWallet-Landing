@@ -4,18 +4,21 @@
   --font-size: 16px;
   
   /* CoinVoidly Custom Color Palette */
-  --background: #0A0A0B;
-  --surface: #16151A;
-  --background-alt: #0F172A;
-  --primary: #6D28D9;
-  --secondary: #A78BFA;
-  --success: #22C55E;
+  --background: #061017;
+  --surface: #0d1821;
+  --surface-elevated: #122432;
+  --background-alt: #08141d;
+  --primary: #00c2ff;
+  --primary-strong: #f7931a;
+  --secondary: #74f2ce;
+  --success: #00e0b0;
   --danger: #EF4444;
-  --text-primary: #F8FAFC;
-  --text-secondary: #A1A1AA;
+  --text-primary: #f4fbff;
+  --text-secondary: #97aebe;
   --border: rgba(255, 255, 255, 0.08);
-  --fill-muted-primary: rgba(109, 40, 217, 0.12);
-  --fill-muted-secondary: rgba(167, 139, 250, 0.14);
+  --border-strong: rgba(255, 255, 255, 0.14);
+  --fill-muted-primary: rgba(0, 194, 255, 0.12);
+  --fill-muted-secondary: rgba(116, 242, 206, 0.12);
   
   /* Legacy theme vars for compatibility */
   --foreground: var(--text-primary);

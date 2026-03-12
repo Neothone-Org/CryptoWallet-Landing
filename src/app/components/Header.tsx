@@ -6,12 +6,17 @@ const APP_STORE_URL = "https://apps.apple.com/ro/app/crypto-tracker-coin-voidly/
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const navItems = [
+    { label: "Overview", href: "#overview" },
+    { label: "Features", href: "#features" },
+    { label: "Pricing", href: "#pricing" },
+    { label: "FAQ", href: "#faq" },
+  ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b backdrop-blur-md" style={{ borderColor: 'var(--border)', backgroundColor: 'rgba(10, 10, 11, 0.8)' }}>
+    <header className="fixed top-0 left-0 right-0 z-50 border-b backdrop-blur-xl" style={{ borderColor: 'var(--border)', backgroundColor: 'rgba(6, 16, 23, 0.78)' }}>
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <img
               src="/logo.jpeg"
@@ -21,17 +26,12 @@ export function Header() {
             <span className="text-xl" style={{ color: 'var(--text-primary)' }}>CoinVoidly</span>
           </Link>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#features" className="transition-colors hover:opacity-80" style={{ color: 'var(--text-secondary)' }}>
-              Features
-            </a>
-            <a href="#pricing" className="transition-colors hover:opacity-80" style={{ color: 'var(--text-secondary)' }}>
-              Pricing
-            </a>
-            <a href="#faq" className="transition-colors hover:opacity-80" style={{ color: 'var(--text-secondary)' }}>
-              FAQ
-            </a>
+            {navItems.map((item) => (
+              <a key={item.href} href={item.href} className="transition-colors hover:opacity-80" style={{ color: 'var(--text-secondary)' }}>
+                {item.label}
+              </a>
+            ))}
             <Link to="/support" className="transition-colors hover:opacity-80" style={{ color: 'var(--text-secondary)' }}>
               Support
             </Link>
@@ -40,14 +40,13 @@ export function Header() {
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 px-6 py-2.5 rounded-xl transition-all hover:opacity-90"
-              style={{ backgroundColor: 'var(--primary)', color: '#ffffff' }}
+              style={{ background: 'linear-gradient(135deg, var(--primary), #5bdcff)', color: '#041017' }}
             >
               <Apple className="h-4 w-4" />
               Download for iOS
             </a>
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             className="md:hidden p-2"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -57,33 +56,19 @@ export function Header() {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
         {mobileMenuOpen && (
           <div className="md:hidden pb-4 pt-2 space-y-3 border-t" style={{ borderColor: 'var(--border)' }}>
-            <a
-              href="#features"
-              className="block py-2 transition-colors"
-              style={{ color: 'var(--text-secondary)' }}
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Features
-            </a>
-            <a
-              href="#pricing"
-              className="block py-2 transition-colors"
-              style={{ color: 'var(--text-secondary)' }}
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Pricing
-            </a>
-            <a
-              href="#faq"
-              className="block py-2 transition-colors"
-              style={{ color: 'var(--text-secondary)' }}
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              FAQ
-            </a>
+            {navItems.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                className="block py-2 transition-colors"
+                style={{ color: 'var(--text-secondary)' }}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {item.label}
+              </a>
+            ))}
             <Link
               to="/support"
               className="block py-2 transition-colors"
@@ -97,7 +82,7 @@ export function Header() {
               target="_blank"
               rel="noreferrer"
               className="w-full flex items-center justify-center gap-2 px-6 py-2.5 rounded-xl"
-              style={{ backgroundColor: 'var(--primary)', color: '#ffffff' }}
+              style={{ background: 'linear-gradient(135deg, var(--primary), #5bdcff)', color: '#041017' }}
             >
               <Apple className="h-4 w-4" />
               Download for iOS

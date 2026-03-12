@@ -20,7 +20,7 @@ export function Footer() {
               <span className="text-xl" style={{ color: 'var(--text-primary)' }}>CoinVoidly</span>
             </div>
             <p className="mb-4 max-w-md" style={{ color: 'var(--text-secondary)' }}>
-              Track your crypto portfolio with powerful analytics, real-time market data, AI-powered insights, and secure login with email and password, Apple, or Google. Available now on iOS.
+              A modern crypto tracking app for iPhone with portfolio monitoring, live market visibility, AI-generated insights, and fast secure sign-in.
             </p>
             <div className="flex gap-4">
               <a
